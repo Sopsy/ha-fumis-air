@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select a Fumis AIR or Tulikivi Senso controller",
+        "description": "Choose a nearby connectable controller advertising Fumis AIR, Senso, or AirMaster and the shared service. Unnamed controllers with the service are listed by address and require model selection.",
+        "data": {
+          "address": "Controller"
+        }
+      },
+      "model": {
+        "title": "Select controller model",
+        "description": "AirMaster is shared by both products, and unnamed controllers cannot be identified from their advertisement. Select the model shown on your controller or its app.",
+        "data": {
+          "model": "Controller model"
+        }
+      },
+      "confirm": {
+        "title": "Confirm controller",
+        "description": "If Bluetooth pairing is required, enter the PIN from your controller manual. Leave it blank if the controller is already paired or does not request a PIN.",
+        "data": {
+          "pin": "Bluetooth pairing PIN (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_pin": "Enter the six-digit Bluetooth pairing PIN, including any leading zeroes.",
+      "device_not_found": "That controller is no longer available. Start setup again when it is in range.",
+      "cannot_connect": "Could not connect. Check that the controller is in range, the adapter is available, and any required OS pairing is complete.",
+      "pairing_failed": "Bluetooth pairing failed. Check the PIN and try again, or pair the controller through the host operating system.",
+      "pairing_unsupported": "This adapter cannot enter a PIN through Home Assistant. Pair the controller through the host operating system, then submit setup without a PIN.",
+      "not_supported": "The device does not expose a supported Fumis AIR or Tulikivi Senso register profile."
+    },
+    "abort": {
+      "no_devices_found": "No nearby connectable Fumis AIR, Senso, AirMaster, or unnamed controllers with the required service were found.",
+      "already_configured": "This controller is already configured.",
+      "cannot_connect": "Could not connect to the discovered controller.",
+      "not_supported": "The discovered device did not respond as a supported controller."
+    }
+  }
+}

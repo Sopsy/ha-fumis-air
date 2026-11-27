@@ -1,0 +1,2509 @@
+entities:
+  flue_gas_temperature:
+    register: 10243
+    description: Flue-gas temperature
+    unit: °C
+    fast_update_frequency: true
+    device_class: temperature
+    state_class: measurement
+    precision: 0
+    display_bit: 2
+  parameter_fumis_air_000_001:
+    register: 1
+    description: Desired position of primary air flap in Off phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-001
+  parameter_fumis_air_000_002:
+    register: 2
+    description: Desired position of secondary air flap in Off phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-002
+  parameter_fumis_air_000_003:
+    register: 3
+    description: Desired position of tertiary air flap in Off phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-003
+  parameter_fumis_air_000_004:
+    register: 4
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-004
+  parameter_fumis_air_000_005:
+    register: 5
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-005
+  parameter_fumis_air_000_006:
+    register: 6
+    description: >-
+      Gas temperature threshold for automatic start of the system when in Off
+      phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-006
+  parameter_fumis_air_000_007:
+    register: 7
+    description: Gas temperature rising slope from Off to Firing up phase
+    unit: °C/min
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 000-007
+  parameter_fumis_air_000_008:
+    register: 8
+    description: Minimum time the system stays in Off phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 000-008
+  parameter_fumis_air_001_001:
+    register: 257
+    description: Desired position of primary air flap in Firing up phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-001
+  parameter_fumis_air_001_002:
+    register: 258
+    description: Desired position of secondary air flap in Firing up phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-002
+  parameter_fumis_air_001_003:
+    register: 259
+    description: Desired position of tertiary air flap in Firing up phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-003
+  parameter_fumis_air_001_004:
+    register: 260
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-004
+  parameter_fumis_air_001_005:
+    register: 261
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-005
+  parameter_fumis_air_001_006:
+    register: 262
+    description: >-
+      Gas temperature threshold for automatic transition from Firing up to Check
+      fire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-006
+  parameter_fumis_air_001_007:
+    register: 263
+    description: Gas temperature rising slope from Firing up to Check fire phase
+    unit: °C/min
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 001-007
+  parameter_fumis_air_001_008:
+    register: 264
+    description: >-
+      Oxygen content threshold for automatic transition from Firing up to Check
+      fire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 001-008
+  parameter_fumis_air_001_009:
+    register: 265
+    description: >-
+      After condition met (temp., O2, slope,…) + time delay the system does the
+      transition to Check fire
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 001-009
+  parameter_fumis_air_001_010:
+    register: 266
+    description: Maximum time for exiting Firing up and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 001-010
+  parameter_fumis_air_002_001:
+    register: 513
+    description: Desired position of primary air flap in Check fire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-001
+  parameter_fumis_air_002_002:
+    register: 514
+    description: Desired position of secondary air flap in Check fire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-002
+  parameter_fumis_air_002_003:
+    register: 515
+    description: Desired position of tertiary air flap in Check fire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-003
+  parameter_fumis_air_002_004:
+    register: 516
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-004
+  parameter_fumis_air_002_005:
+    register: 517
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-005
+  parameter_fumis_air_002_006:
+    register: 518
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning power 1 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-006
+  parameter_fumis_air_002_007:
+    register: 519
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning power 2 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-007
+  parameter_fumis_air_002_008:
+    register: 520
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning power 3 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-008
+  parameter_fumis_air_002_009:
+    register: 521
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning power 4 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-009
+  parameter_fumis_air_002_010:
+    register: 522
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning power 5 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-010
+  parameter_fumis_air_002_011:
+    register: 523
+    description: Gas temperature rising slope from Check fire to Burning phase
+    unit: °C/min
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 002-011
+  parameter_fumis_air_002_012:
+    register: 524
+    description: >-
+      Oxygen content threshold for automatic transition from Check fire to
+      Burning power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 002-012
+  parameter_fumis_air_002_013:
+    register: 525
+    description: >-
+      Oxygen content threshold for automatic transition from Check fire to
+      Burning power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 002-013
+  parameter_fumis_air_002_014:
+    register: 526
+    description: >-
+      Oxygen content threshold for automatic transition from Check fire to
+      Burning power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 002-014
+  parameter_fumis_air_002_015:
+    register: 527
+    description: >-
+      Oxygen content threshold for automatic transition from Check fire to
+      Burning power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 002-015
+  parameter_fumis_air_002_016:
+    register: 528
+    description: >-
+      Oxygen content threshold for automatic transition from Check fire to
+      Burning power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 002-016
+  parameter_fumis_air_002_017:
+    register: 529
+    description: >-
+      After condition met (temp., O2, slope,…) + time delay the system does the
+      transition to Burning
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 002-017
+  parameter_fumis_air_002_018:
+    register: 530
+    description: Maximum time for exiting Check fire and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 002-018
+  parameter_fumis_air_003_001:
+    register: 769
+    description: Target Gas temperature in Burning power 1 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-001
+  parameter_fumis_air_003_002:
+    register: 770
+    description: Target Gas temperature in Burning power 2 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-002
+  parameter_fumis_air_003_003:
+    register: 771
+    description: Target Gas temperature in Burning power 3 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-003
+  parameter_fumis_air_003_004:
+    register: 772
+    description: Target Gas temperature in Burning power 4 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-004
+  parameter_fumis_air_003_005:
+    register: 773
+    description: Target Gas temperature in Burning power 5 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-005
+  parameter_fumis_air_003_006:
+    register: 774
+    description: >-
+      Gas temperature threshold for automatic transition from Burning power 1 to
+      Burnout phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-006
+  parameter_fumis_air_003_007:
+    register: 775
+    description: >-
+      Gas temperature threshold for automatic transition from Burning power 2 to
+      Burnout phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-007
+  parameter_fumis_air_003_008:
+    register: 776
+    description: >-
+      Gas temperature threshold for automatic transition from Burning power 3 to
+      Burnout phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-008
+  parameter_fumis_air_003_009:
+    register: 777
+    description: >-
+      Gas temperature threshold for automatic transition from Burning power 4 to
+      Burnout phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-009
+  parameter_fumis_air_003_010:
+    register: 778
+    description: >-
+      Gas temperature threshold for automatic transition from Burning power 5 to
+      Burnout phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-010
+  parameter_fumis_air_003_011:
+    register: 779
+    description: Target oxygen content in Burning power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-011
+  parameter_fumis_air_003_012:
+    register: 780
+    description: Target oxygen content in Burning power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-012
+  parameter_fumis_air_003_013:
+    register: 781
+    description: Target oxygen content in Burning power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-013
+  parameter_fumis_air_003_014:
+    register: 782
+    description: Target oxygen content in Burning power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-014
+  parameter_fumis_air_003_015:
+    register: 783
+    description: Target oxygen content in Burning power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-015
+  parameter_fumis_air_003_016:
+    register: 784
+    description: >-
+      Oxygen content threshold for automatic transition from Burning power 1 to
+      Burnout phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-016
+  parameter_fumis_air_003_017:
+    register: 785
+    description: >-
+      Oxygen content threshold for automatic transition from Burning power 2 to
+      Burnout phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-017
+  parameter_fumis_air_003_018:
+    register: 786
+    description: >-
+      Oxygen content threshold for automatic transition from Burning power 3 to
+      Burnout phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-018
+  parameter_fumis_air_003_019:
+    register: 787
+    description: >-
+      Oxygen content threshold for automatic transition from Burning power 4 to
+      Burnout phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-019
+  parameter_fumis_air_003_020:
+    register: 788
+    description: >-
+      Oxygen content threshold for automatic transition from Burning power 5 to
+      Burnout phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 003-020
+  parameter_fumis_air_003_021:
+    register: 789
+    description: Minimum time the system stays in Burning phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 003-021
+  parameter_fumis_air_003_022:
+    register: 790
+    description: >-
+      After condition met (temp., O2, slope,…) + time delay the system does the
+      transition to Burnout
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 003-022
+  parameter_fumis_air_003_023:
+    register: 791
+    description: Desired position of primary air flap in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-023
+  parameter_fumis_air_003_024:
+    register: 792
+    description: Desired position of primary air flap in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-024
+  parameter_fumis_air_003_025:
+    register: 793
+    description: Desired position of primary air flap in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-025
+  parameter_fumis_air_003_026:
+    register: 794
+    description: Desired position of primary air flap in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-026
+  parameter_fumis_air_003_027:
+    register: 795
+    description: Desired position of primary air flap in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-027
+  parameter_fumis_air_003_028:
+    register: 796
+    description: Desired position of secondary air flap in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-028
+  parameter_fumis_air_003_029:
+    register: 797
+    description: Desired position of secondary air flap in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-029
+  parameter_fumis_air_003_030:
+    register: 798
+    description: Desired position of secondary air flap in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-030
+  parameter_fumis_air_003_031:
+    register: 799
+    description: Desired position of secondary air flap in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-031
+  parameter_fumis_air_003_032:
+    register: 800
+    description: Desired position of secondary air flap in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-032
+  parameter_fumis_air_003_033:
+    register: 801
+    description: Desired position of tertiary air flap in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-033
+  parameter_fumis_air_003_034:
+    register: 802
+    description: Desired position of tertiary air flap in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-034
+  parameter_fumis_air_003_035:
+    register: 803
+    description: Desired position of tertiary air flap in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-035
+  parameter_fumis_air_003_036:
+    register: 804
+    description: Desired position of tertiary air flap in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-036
+  parameter_fumis_air_003_037:
+    register: 805
+    description: Desired position of tertiary air flap in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-037
+  parameter_fumis_air_003_038:
+    register: 806
+    description: Aux1 value pwr1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-038
+  parameter_fumis_air_003_039:
+    register: 807
+    description: Aux1 value pwr2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-039
+  parameter_fumis_air_003_040:
+    register: 808
+    description: Aux1 value pwr3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-040
+  parameter_fumis_air_003_041:
+    register: 809
+    description: Aux1 value pwr4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-041
+  parameter_fumis_air_003_042:
+    register: 810
+    description: Aux1 value pwr5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-042
+  parameter_fumis_air_003_043:
+    register: 811
+    description: Aux2 value pwr 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-043
+  parameter_fumis_air_003_044:
+    register: 812
+    description: Aux2 value pwr 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-044
+  parameter_fumis_air_003_045:
+    register: 813
+    description: Aux2 value pwr 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-045
+  parameter_fumis_air_003_046:
+    register: 814
+    description: Aux2 value pwr 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-046
+  parameter_fumis_air_003_047:
+    register: 815
+    description: Aux2 value pwr 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-047
+  parameter_fumis_air_003_048:
+    register: 816
+    description: Minimum value for primary air flap position in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-048
+  parameter_fumis_air_003_049:
+    register: 817
+    description: Minimum value for primary air flap position in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-049
+  parameter_fumis_air_003_050:
+    register: 818
+    description: Minimum value for primary air flap position in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-050
+  parameter_fumis_air_003_051:
+    register: 819
+    description: Minimum value for primary air flap position in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-051
+  parameter_fumis_air_003_052:
+    register: 820
+    description: Minimum value for primary air flap position in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-052
+  parameter_fumis_air_003_053:
+    register: 821
+    description: Minimum value for secondary air flap position in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-053
+  parameter_fumis_air_003_054:
+    register: 822
+    description: Minimum value for secondary air flap position in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-054
+  parameter_fumis_air_003_055:
+    register: 823
+    description: Minimum value for secondary air flap position in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-055
+  parameter_fumis_air_003_056:
+    register: 824
+    description: Minimum value for secondary air flap position in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-056
+  parameter_fumis_air_003_057:
+    register: 825
+    description: Minimum value for secondary air flap position in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-057
+  parameter_fumis_air_003_058:
+    register: 826
+    description: Minimum value for tertiary air flap position in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-058
+  parameter_fumis_air_003_059:
+    register: 827
+    description: Minimum value for tertiary air flap position in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-059
+  parameter_fumis_air_003_060:
+    register: 828
+    description: Minimum value for tertiary air flap position in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-060
+  parameter_fumis_air_003_061:
+    register: 829
+    description: Minimum value for tertiary air flap position in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-061
+  parameter_fumis_air_003_062:
+    register: 830
+    description: Minimum value for tertiary air flap position in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-062
+  parameter_fumis_air_003_063:
+    register: 831
+    description: Maximum value for primary air flap position in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-063
+  parameter_fumis_air_003_064:
+    register: 832
+    description: Maximum value for primary air flap position in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-064
+  parameter_fumis_air_003_065:
+    register: 833
+    description: Maximum value for primary air flap position in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-065
+  parameter_fumis_air_003_066:
+    register: 834
+    description: Maximum value for primary air flap position in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-066
+  parameter_fumis_air_003_067:
+    register: 835
+    description: Maximum value for primary air flap position in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-067
+  parameter_fumis_air_003_068:
+    register: 836
+    description: Maximum value for secondary air flap position in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-068
+  parameter_fumis_air_003_069:
+    register: 837
+    description: Maximum value for secondary air flap position in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-069
+  parameter_fumis_air_003_070:
+    register: 838
+    description: Maximum value for secondary air flap position in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-070
+  parameter_fumis_air_003_071:
+    register: 839
+    description: Maximum value for secondary air flap position in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-071
+  parameter_fumis_air_003_072:
+    register: 840
+    description: Maximum value for secondary air flap position in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-072
+  parameter_fumis_air_003_073:
+    register: 841
+    description: Maximum value for tertiary air flap position in Burning Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-073
+  parameter_fumis_air_003_074:
+    register: 842
+    description: Maximum value for tertiary air flap position in Burning Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-074
+  parameter_fumis_air_003_075:
+    register: 843
+    description: Maximum value for tertiary air flap position in Burning Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-075
+  parameter_fumis_air_003_076:
+    register: 844
+    description: Maximum value for tertiary air flap position in Burning Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-076
+  parameter_fumis_air_003_077:
+    register: 845
+    description: Maximum value for tertiary air flap position in Burning Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-077
+  parameter_fumis_air_003_078:
+    register: 846
+    description: >-
+      Gain factor for primary flap modulation based on gas temperature in
+      Burning phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 003-078
+  parameter_fumis_air_003_079:
+    register: 847
+    description: >-
+      Gain factor for secondary flap modulation based on gas temperature in
+      Burning phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 003-079
+  parameter_fumis_air_003_080:
+    register: 848
+    description: >-
+      Gain factor for tertiary flap modulation based on gas temperature in
+      Burning phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 003-080
+  parameter_fumis_air_003_081:
+    register: 849
+    description: >-
+      Gain factor for primary flap modulation based on oxygen content in Burning
+      phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 003-081
+  parameter_fumis_air_003_082:
+    register: 850
+    description: >-
+      Gain factor for secondary flap modulation based on oxygen content in
+      Burning phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 003-082
+  parameter_fumis_air_003_083:
+    register: 851
+    description: >-
+      Gain factor for tertiary flap modulation based on oxygen content in
+      Burning phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 003-083
+  parameter_fumis_air_003_084:
+    register: 852
+    description: Proportional part for system modulation
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 003-084
+  parameter_fumis_air_003_085:
+    register: 853
+    description: Integrational part for system modulation based on oxygene
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 003-085
+  parameter_fumis_air_003_086:
+    register: 854
+    description: Integrational part for system modulation based on gas temperature
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 003-086
+  parameter_fumis_air_003_087:
+    register: 855
+    description: Sampling speed for system modulation
+    scale: 0.1
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 003-087
+  parameter_fumis_air_003_088:
+    register: 856
+    description: >-
+      Desired power when entering Burning phase from Check fire phase to avoid
+      flame suffocation
+    raw_minimum: 0
+    raw_maximum: 5
+    identifier: 003-088
+  parameter_fumis_air_003_089:
+    register: 857
+    description: >-
+      Time delay before going from burning start power into set power level by
+      the end user
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 003-089
+  parameter_fumis_air_004_001:
+    register: 1025
+    description: Target Gas temperature in Burnout power 1 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-001
+  parameter_fumis_air_004_002:
+    register: 1026
+    description: Target Gas temperature in Burnout power 2 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-002
+  parameter_fumis_air_004_003:
+    register: 1027
+    description: Target Gas temperature in Burnout power 3 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-003
+  parameter_fumis_air_004_004:
+    register: 1028
+    description: Target Gas temperature in Burnout power 4 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-004
+  parameter_fumis_air_004_005:
+    register: 1029
+    description: Target Gas temperature in Burnout power 5 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-005
+  parameter_fumis_air_004_006:
+    register: 1030
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 1 to
+      Burning power 1 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-006
+  parameter_fumis_air_004_007:
+    register: 1031
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 2 to
+      Burning power 2 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-007
+  parameter_fumis_air_004_008:
+    register: 1032
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 3 to
+      Burning power 3 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-008
+  parameter_fumis_air_004_009:
+    register: 1033
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 4 to
+      Burning power 4 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-009
+  parameter_fumis_air_004_010:
+    register: 1034
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 5 to
+      Burning power 5 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-010
+  parameter_fumis_air_004_011:
+    register: 1035
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 1 to
+      Lowfire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-011
+  parameter_fumis_air_004_012:
+    register: 1036
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 2 to
+      Lowfire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-012
+  parameter_fumis_air_004_013:
+    register: 1037
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 3 to
+      Lowfire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-013
+  parameter_fumis_air_004_014:
+    register: 1038
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 4 to
+      Lowfire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-014
+  parameter_fumis_air_004_015:
+    register: 1039
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout power 5 to
+      Lowfire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-015
+  parameter_fumis_air_004_016:
+    register: 1040
+    description: Target oxygen content in Burnout power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-016
+  parameter_fumis_air_004_017:
+    register: 1041
+    description: Target oxygen content in Burnout power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-017
+  parameter_fumis_air_004_018:
+    register: 1042
+    description: Target oxygen content in Burnout power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-018
+  parameter_fumis_air_004_019:
+    register: 1043
+    description: Target oxygen content in Burnout power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-019
+  parameter_fumis_air_004_020:
+    register: 1044
+    description: Target oxygen content in Burnout power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-020
+  parameter_fumis_air_004_021:
+    register: 1045
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 1 to
+      Burning power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-021
+  parameter_fumis_air_004_022:
+    register: 1046
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 2 to
+      Burning power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-022
+  parameter_fumis_air_004_023:
+    register: 1047
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 3 to
+      Burning power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-023
+  parameter_fumis_air_004_024:
+    register: 1048
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 4 to
+      Burning power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-024
+  parameter_fumis_air_004_025:
+    register: 1049
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 5 to
+      Burning power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-025
+  parameter_fumis_air_004_026:
+    register: 1050
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 1 to
+      Lowfire
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-026
+  parameter_fumis_air_004_027:
+    register: 1051
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 2 to
+      Lowfire
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-027
+  parameter_fumis_air_004_028:
+    register: 1052
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 3 to
+      Lowfire
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-028
+  parameter_fumis_air_004_029:
+    register: 1053
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 4 to
+      Lowfire
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-029
+  parameter_fumis_air_004_030:
+    register: 1054
+    description: >-
+      Oxygen content threshold for automatic transition from Burnout power 5 to
+      Lowfire
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 004-030
+  parameter_fumis_air_004_031:
+    register: 1055
+    description: >-
+      After condition met (temp., O2, slope,…) + time delay the system does the
+      transition to Burning or Low fire
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 004-031
+  parameter_fumis_air_004_032:
+    register: 1056
+    description: Maximum time for exiting Burnout and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 004-032
+  parameter_fumis_air_004_033:
+    register: 1057
+    description: Desired position of primary air flap in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-033
+  parameter_fumis_air_004_034:
+    register: 1058
+    description: Desired position of primary air flap in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-034
+  parameter_fumis_air_004_035:
+    register: 1059
+    description: Desired position of primary air flap in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-035
+  parameter_fumis_air_004_036:
+    register: 1060
+    description: Desired position of primary air flap in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-036
+  parameter_fumis_air_004_037:
+    register: 1061
+    description: Desired position of primary air flap in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-037
+  parameter_fumis_air_004_038:
+    register: 1062
+    description: Desired position of secondary air flap in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-038
+  parameter_fumis_air_004_039:
+    register: 1063
+    description: Desired position of secondary air flap in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-039
+  parameter_fumis_air_004_040:
+    register: 1064
+    description: Desired position of secondary air flap in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-040
+  parameter_fumis_air_004_041:
+    register: 1065
+    description: Desired position of secondary air flap in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-041
+  parameter_fumis_air_004_042:
+    register: 1066
+    description: Desired position of secondary air flap in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-042
+  parameter_fumis_air_004_043:
+    register: 1067
+    description: Desired position of tertiary air flap in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-043
+  parameter_fumis_air_004_044:
+    register: 1068
+    description: Desired position of tertiary air flap in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-044
+  parameter_fumis_air_004_045:
+    register: 1069
+    description: Desired position of tertiary air flap in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-045
+  parameter_fumis_air_004_046:
+    register: 1070
+    description: Desired position of tertiary air flap in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-046
+  parameter_fumis_air_004_047:
+    register: 1071
+    description: Desired position of tertiary air flap in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-047
+  parameter_fumis_air_004_048:
+    register: 1072
+    description: Aux1 value pwr1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-048
+  parameter_fumis_air_004_049:
+    register: 1073
+    description: Aux1 value pwr2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-049
+  parameter_fumis_air_004_050:
+    register: 1074
+    description: Aux1 value pwr3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-050
+  parameter_fumis_air_004_051:
+    register: 1075
+    description: Aux1 value pwr4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-051
+  parameter_fumis_air_004_052:
+    register: 1076
+    description: Aux1 value pwr5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-052
+  parameter_fumis_air_004_053:
+    register: 1077
+    description: Aux2 value pwr 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-053
+  parameter_fumis_air_004_054:
+    register: 1078
+    description: Aux2 value pwr 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-054
+  parameter_fumis_air_004_055:
+    register: 1079
+    description: Aux2 value pwr 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-055
+  parameter_fumis_air_004_056:
+    register: 1080
+    description: Aux2 value pwr 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-056
+  parameter_fumis_air_004_057:
+    register: 1081
+    description: Aux2 value pwr 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-057
+  parameter_fumis_air_004_058:
+    register: 1082
+    description: Minimum value for primary air flap position in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-058
+  parameter_fumis_air_004_059:
+    register: 1083
+    description: Minimum value for primary air flap position in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-059
+  parameter_fumis_air_004_060:
+    register: 1084
+    description: Minimum value for primary air flap position in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-060
+  parameter_fumis_air_004_061:
+    register: 1085
+    description: Minimum value for primary air flap position in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-061
+  parameter_fumis_air_004_062:
+    register: 1086
+    description: Minimum value for primary air flap position in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-062
+  parameter_fumis_air_004_063:
+    register: 1087
+    description: Minimum value for secondary air flap position in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-063
+  parameter_fumis_air_004_064:
+    register: 1088
+    description: Minimum value for secondary air flap position in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-064
+  parameter_fumis_air_004_065:
+    register: 1089
+    description: Minimum value for secondary air flap position in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-065
+  parameter_fumis_air_004_066:
+    register: 1090
+    description: Minimum value for secondary air flap position in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-066
+  parameter_fumis_air_004_067:
+    register: 1091
+    description: Minimum value for secondary air flap position in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-067
+  parameter_fumis_air_004_068:
+    register: 1092
+    description: Minimum value for tertiary air flap position in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-068
+  parameter_fumis_air_004_069:
+    register: 1093
+    description: Minimum value for tertiary air flap position in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-069
+  parameter_fumis_air_004_070:
+    register: 1094
+    description: Minimum value for tertiary air flap position in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-070
+  parameter_fumis_air_004_071:
+    register: 1095
+    description: Minimum value for tertiary air flap position in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-071
+  parameter_fumis_air_004_072:
+    register: 1096
+    description: Minimum value for tertiary air flap position in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-072
+  parameter_fumis_air_004_073:
+    register: 1097
+    description: Maximum value for primary air flap position in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-073
+  parameter_fumis_air_004_074:
+    register: 1098
+    description: Maximum value for primary air flap position in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-074
+  parameter_fumis_air_004_075:
+    register: 1099
+    description: Maximum value for primary air flap position in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-075
+  parameter_fumis_air_004_076:
+    register: 1100
+    description: Maximum value for primary air flap position in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-076
+  parameter_fumis_air_004_077:
+    register: 1101
+    description: Maximum value for primary air flap position in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-077
+  parameter_fumis_air_004_078:
+    register: 1102
+    description: Maximum value for secondary air flap position in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-078
+  parameter_fumis_air_004_079:
+    register: 1103
+    description: Maximum value for secondary air flap position in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-079
+  parameter_fumis_air_004_080:
+    register: 1104
+    description: Maximum value for secondary air flap position in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-080
+  parameter_fumis_air_004_081:
+    register: 1105
+    description: Maximum value for secondary air flap position in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-081
+  parameter_fumis_air_004_082:
+    register: 1106
+    description: Maximum value for secondary air flap position in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-082
+  parameter_fumis_air_004_083:
+    register: 1107
+    description: Maximum value for tertiary air flap position in Burnout Power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-083
+  parameter_fumis_air_004_084:
+    register: 1108
+    description: Maximum value for tertiary air flap position in Burnout Power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-084
+  parameter_fumis_air_004_085:
+    register: 1109
+    description: Maximum value for tertiary air flap position in Burnout Power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-085
+  parameter_fumis_air_004_086:
+    register: 1110
+    description: Maximum value for tertiary air flap position in Burnout Power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-086
+  parameter_fumis_air_004_087:
+    register: 1111
+    description: Maximum value for tertiary air flap position in Burnout Power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-087
+  parameter_fumis_air_004_088:
+    register: 1112
+    description: >-
+      Gain factor for primary flap modulation based on gas temperature in
+      Burnout phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 004-088
+  parameter_fumis_air_004_089:
+    register: 1113
+    description: >-
+      Gain factor for secondary flap modulation based on gas temperature in
+      Burnout phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 004-089
+  parameter_fumis_air_004_090:
+    register: 1114
+    description: >-
+      Gain factor for tertiary flap modulation based on gas temperature in
+      Burnout phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 004-090
+  parameter_fumis_air_004_091:
+    register: 1115
+    description: >-
+      Gain factor for primary flap modulation based on oxygen content in Burnout
+      phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 004-091
+  parameter_fumis_air_004_092:
+    register: 1116
+    description: >-
+      Gain factor for secondary flap modulation based on oxygen content in
+      Burnout phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 004-092
+  parameter_fumis_air_004_093:
+    register: 1117
+    description: >-
+      Gain factor for tertiary flap modulation based on oxygen content in
+      Burnout phase
+    raw_minimum: -128
+    raw_maximum: 128
+    identifier: 004-093
+  parameter_fumis_air_005_001:
+    register: 1281
+    description: Desired position of primary air flap in LowFire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-001
+  parameter_fumis_air_005_002:
+    register: 1282
+    description: Desired position of secondary air flap in LowFire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-002
+  parameter_fumis_air_005_003:
+    register: 1283
+    description: Desired position of tertiary air flap in LowFire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-003
+  parameter_fumis_air_005_004:
+    register: 1284
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-004
+  parameter_fumis_air_005_005:
+    register: 1285
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-005
+  parameter_fumis_air_005_006:
+    register: 1286
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 1 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-006
+  parameter_fumis_air_005_007:
+    register: 1287
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 2 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-007
+  parameter_fumis_air_005_008:
+    register: 1288
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 3 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-008
+  parameter_fumis_air_005_009:
+    register: 1289
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 4 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-009
+  parameter_fumis_air_005_010:
+    register: 1290
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 5 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-010
+  parameter_fumis_air_005_011:
+    register: 1291
+    description: Gas temperature rising slope from Low fire to Burning phase
+    unit: °C/min
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 005-011
+  parameter_fumis_air_005_012:
+    register: 1292
+    description: >-
+      Oxygen content threshold for automatic transition from Low fire to Burning
+      power 1 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 005-012
+  parameter_fumis_air_005_013:
+    register: 1293
+    description: >-
+      Oxygen content threshold for automatic transition from Low fire to Burning
+      power 2 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 005-013
+  parameter_fumis_air_005_014:
+    register: 1294
+    description: >-
+      Oxygen content threshold for automatic transition from Low fire to Burning
+      power 3 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 005-014
+  parameter_fumis_air_005_015:
+    register: 1295
+    description: >-
+      Oxygen content threshold for automatic transition from Low fire to Burning
+      power 4 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 005-015
+  parameter_fumis_air_005_016:
+    register: 1296
+    description: >-
+      Oxygen content threshold for automatic transition from Low fire to Burning
+      power 5 phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 005-016
+  parameter_fumis_air_005_017:
+    register: 1297
+    description: >-
+      After condition met (temp., O2, slope,…) + time delay the system does the
+      transition to Burning
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 005-017
+  parameter_fumis_air_005_018:
+    register: 1298
+    description: Maximum time for exiting Low fire and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 005-018
+  parameter_fumis_air_005_019:
+    register: 1299
+    description: Number of notifications
+    raw_minimum: 0
+    raw_maximum: 100
+    identifier: 005-019
+  parameter_fumis_air_006_001:
+    register: 1537
+    description: Desired position of primary air flap in ShutDown phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-001
+  parameter_fumis_air_006_002:
+    register: 1538
+    description: Desired position of secondary air flap in ShutDown phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-002
+  parameter_fumis_air_006_003:
+    register: 1539
+    description: Desired position of tertiary air flap in ShutDown phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-003
+  parameter_fumis_air_006_004:
+    register: 1540
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-004
+  parameter_fumis_air_006_005:
+    register: 1541
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-005
+  parameter_fumis_air_006_006:
+    register: 1542
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Low
+      fire phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-006
+  parameter_fumis_air_006_007:
+    register: 1543
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Off
+      phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-007
+  parameter_fumis_air_006_008:
+    register: 1544
+    description: >-
+      Oxygen content threshold for automatic transition from Shut down to Low
+      fire phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 006-008
+  parameter_fumis_air_006_009:
+    register: 1545
+    description: >-
+      Oxygen content threshold for automatic transition from Shut down to Off
+      phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 210
+    identifier: 006-009
+  parameter_fumis_air_006_010:
+    register: 1546
+    description: >-
+      After condition met (temp., O2, slope,…) + time delay the system does the
+      transition to Low fire or Off
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 006-010
+  parameter_fumis_air_020_001:
+    register: 5121
+    description: Desired position of primary air flap in DoorOpen phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-001
+  parameter_fumis_air_020_002:
+    register: 5122
+    description: Desired position of secondary air flap in DoorOpen phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-002
+  parameter_fumis_air_020_003:
+    register: 5123
+    description: Desired position of tertiary air flap in DoorOpen phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-003
+  parameter_fumis_air_020_004:
+    register: 5124
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-004
+  parameter_fumis_air_020_005:
+    register: 5125
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-005
+  parameter_fumis_air_020_006:
+    register: 5126
+    description: >-
+      Time delay 1 when door switch opens. If the door closes in less than X
+      seconds all flaps stays in the same position. If the door is still open
+      after this X time all flaps goes to Door open position
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 020-006
+  parameter_fumis_air_020_007:
+    register: 5127
+    description: >-
+      Time delay 2 when door switch closes. The system stays in Door open
+      position for X seconds
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 020-007
+  parameter_fumis_air_020_008:
+    register: 5128
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Off phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-008
+  parameter_fumis_air_020_009:
+    register: 5129
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Firing up phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-009
+  parameter_fumis_air_020_010:
+    register: 5130
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Check fire phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-010
+  parameter_fumis_air_020_011:
+    register: 5131
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Burning phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-011
+  parameter_fumis_air_020_012:
+    register: 5132
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Burnout phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-012
+  parameter_fumis_air_020_013:
+    register: 5133
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Low fire phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-013
+  parameter_fumis_air_020_014:
+    register: 5134
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Shut down phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-014
+  parameter_fumis_air_020_015:
+    register: 5135
+    description: Number of notifications
+    raw_minimum: 0
+    raw_maximum: 59
+    identifier: 020-015
+  parameter_fumis_air_021_001:
+    register: 5377
+    description: Desired position of primary air flap in OverTemp phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-001
+  parameter_fumis_air_021_002:
+    register: 5378
+    description: Desired position of secondary air flap in OverTemp phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-002
+  parameter_fumis_air_021_003:
+    register: 5379
+    description: Desired position of tertiary air flap in OverTemp phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-003
+  parameter_fumis_air_021_004:
+    register: 5380
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-004
+  parameter_fumis_air_021_005:
+    register: 5381
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-005
+  parameter_fumis_air_021_006:
+    register: 5382
+    description: Gas temperature threshold above setpoint for triggering OverTemp operation
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-006
+  parameter_fumis_air_021_007:
+    register: 5383
+    description: Minimum time before entering OverTemp operation when trigged
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 021-007
+  parameter_fumis_air_022_001:
+    register: 5633
+    description: Desired position of primary air flap in PowerLoss phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-001
+  parameter_fumis_air_022_002:
+    register: 5634
+    description: Desired position of secondary air flap in PowerLoss phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-002
+  parameter_fumis_air_022_003:
+    register: 5635
+    description: Desired position of tertiary air flap in PowerLoss phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-003
+  parameter_fumis_air_022_004:
+    register: 5636
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-004
+  parameter_fumis_air_022_005:
+    register: 5637
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-005
+  parameter_fumis_air_023_001:
+    register: 5889
+    description: Desired position of primary air flap in I/OFailure phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-001
+  parameter_fumis_air_023_002:
+    register: 5890
+    description: Desired position of secondary air flap in I/OFailure phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-002
+  parameter_fumis_air_023_003:
+    register: 5891
+    description: Desired position of tertiary air flap in I/OFailure phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-003
+  parameter_fumis_air_023_004:
+    register: 5892
+    description: Aux1 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-004
+  parameter_fumis_air_023_005:
+    register: 5893
+    description: Aux2 value
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-005
+  parameter_fumis_air_030_001:
+    register: 7681
+    description: Primary motor travel distance
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 030-001
+  parameter_fumis_air_030_002:
+    register: 7682
+    description: Primary motor offset return when hitting the end position
+    scale: 0.1
+    unit: '%'
+    raw_minimum: -1000
+    raw_maximum: 1000
+    identifier: 030-002
+  parameter_fumis_air_030_003:
+    register: 7683
+    description: Secondary motor travel distance
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 030-003
+  parameter_fumis_air_030_004:
+    register: 7684
+    description: Secondary motor offset return when hitting the end position
+    scale: 0.1
+    unit: '%'
+    raw_minimum: -1000
+    raw_maximum: 1000
+    identifier: 030-004
+  parameter_fumis_air_030_005:
+    register: 7685
+    description: Tertiary motor travel distance
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 030-005
+  parameter_fumis_air_030_006:
+    register: 7686
+    description: Tertiary motor offset return when hitting the end position
+    scale: 0.1
+    unit: '%'
+    raw_minimum: -1000
+    raw_maximum: 1000
+    identifier: 030-006
+  parameter_fumis_air_030_007:
+    register: 7687
+    description: >-
+      Enables/disables repositioning of all motors when the system turns to OFF
+      phase
+    raw_minimum: 0
+    raw_maximum: 1
+    identifier: 030-007
+  parameter_fumis_air_030_008:
+    register: 7688
+    description: General enable/disable of Lambda probe
+    raw_minimum: 0
+    raw_maximum: 1
+    identifier: 030-008
+  parameter_fumis_air_030_009:
+    register: 7689
+    description: Current selected power level
+    raw_minimum: 1
+    raw_maximum: 5
+    identifier: 030-009
+  parameter_fumis_air_030_010:
+    register: 7690
+    description: Number of Burning power levels
+    raw_minimum: 1
+    raw_maximum: 5
+    identifier: 030-010
+  parameter_fumis_air_030_011:
+    register: 7691
+    description: Set the desired ambient temperature.
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 030-011
+  parameter_fumis_air_030_012:
+    register: 7692
+    description: Mode input 1
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-012
+  parameter_fumis_air_030_013:
+    register: 7693
+    description: Mode input 2
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-013
+  parameter_fumis_air_030_014:
+    register: 7694
+    description: Mode input 3
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-014
+  parameter_fumis_air_030_015:
+    register: 7695
+    description: Mode input 4
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-015
+  parameter_fumis_air_030_016:
+    register: 7696
+    description: Mode input/output 5
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-016
+  parameter_fumis_air_030_017:
+    register: 7697
+    description: Mode input/output 6
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-017
+  parameter_fumis_air_030_018:
+    register: 7698
+    description: Channel select for gas temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-018
+  parameter_fumis_air_030_019:
+    register: 7699
+    description: Channel select for room temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-019
+  parameter_fumis_air_030_020:
+    register: 7700
+    description: Channel select for Ext1 temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-020
+  parameter_fumis_air_030_021:
+    register: 7701
+    description: Channel select for Ext2 temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-021
+  parameter_fumis_air_030_022:
+    register: 7702
+    description: Cycle flaps (for test purposes)
+    raw_minimum: 0
+    raw_maximum: 1
+    identifier: 030-022
+  parameter_fumis_air_030_023:
+    register: 7703
+    description: Nominal draft (for draft compensation)
+    scale: 0.1
+    unit: Pa
+    raw_minimum: 0
+    raw_maximum: 30
+    identifier: 030-023
+  parameter_fumis_air_030_024:
+    register: 7704
+    description: Frequency divider for 0-10V output
+    raw_minimum: 1
+    raw_maximum: 600
+    identifier: 030-024
+  parameter_fumis_air_030_025:
+    register: 7705
+    description: 'LED display brightness 0 = min, 3 = max'
+    raw_minimum: 0
+    raw_maximum: 3
+    identifier: 030-025
+  parameter_fumis_air_030_026:
+    register: 7706
+    description: slope detector window
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 600
+    identifier: 030-026
+  parameter_fumis_air_030_027:
+    register: 7707
+    description: Draft compensator refresh interval 0 = off
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 60
+    identifier: 030-027
+  parameter_fumis_air_030_028:
+    register: 7708
+    description: Max limit for room temperature adjustment
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 030-028
+  parameter_fumis_air_030_029:
+    register: 7709
+    description: Min limit for room temperature adjustment
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 030-029
+  parameter_fumis_air_030_030:
+    register: 7710
+    description: Channel select for heat accumulation stone temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-030

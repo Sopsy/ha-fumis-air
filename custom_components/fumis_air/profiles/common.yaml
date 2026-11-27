@@ -1,0 +1,220 @@
+entities:
+  status:
+    register: 10497
+    description: Status
+    fast_update_frequency: true
+  door_open:
+    register: 10497
+    description: Door open
+    platform: binary_sensor
+    fast_update_frequency: true
+    device_class: door
+  control_error:
+    register: 10500
+    description: Control error
+    entity_type: diag
+    platform: binary_sensor
+    device_class: problem
+  motor_error:
+    register: 10499
+    description: Motor error
+    entity_type: diag
+    platform: binary_sensor
+    device_class: problem
+  sensor_error:
+    register: 10498
+    description: Sensor error
+    entity_type: diag
+    platform: binary_sensor
+    device_class: problem
+  air_temperature:
+    register: 10241
+    description: Room temperature
+    scale: 0.1
+    unit: °C
+    device_class: temperature
+    state_class: measurement
+    precision: 1
+    display_bit: 0
+  water_temperature:
+    register: 10242
+    description: Water temperature
+    unit: °C
+    device_class: temperature
+    state_class: measurement
+    display_bit: 1
+  oven_temperature:
+    register: 10244
+    description: Oven temperature
+    unit: °C
+    device_class: temperature
+    state_class: measurement
+    display_bit: 3
+  heat_temperature:
+    register: 10245
+    description: Heat cap temperature
+    unit: °C
+    fast_update_frequency: true
+    device_class: temperature
+    state_class: measurement
+    precision: 1
+    display_bit: 4
+  draft:
+    register: 10246
+    description: Draft
+    unit: Pa
+    fast_update_frequency: true
+    state_class: measurement
+    display_bit: 5
+  lambda:
+    register: 10247
+    description: Lambda
+    unit: '%'
+    state_class: measurement
+    display_bit: 6
+  manual_air_intake:
+    register: 11265
+    description: Manual air intake
+    unit: '%'
+    entity_type: config
+    platform: number
+    raw_minimum: 0
+    raw_maximum: 100
+    group: settings
+  automatic_air_intake:
+    register: 11265
+    description: Automatic air intake
+    entity_type: config
+    platform: switch
+    group: settings
+  power_mode:
+    register: 11266
+    description: Operating mode
+    entity_type: diag
+    disabled_by_default: true
+    group: settings
+  fan_setting:
+    register: 11265
+    description: Fan setting
+    entity_type: diag
+    disabled_by_default: true
+    group: settings
+    state_class: measurement
+  overheatings_count:
+    register: 11016
+    description: Overheatings count
+    entity_type: diag
+    disabled_by_default: true
+    state_class: total_increasing
+  overheating_time:
+    register: 11017
+    description: Total overheating time
+    unit: min
+    entity_type: diag
+    disabled_by_default: true
+  maximum_temperature:
+    register: 11018
+    description: Maximum temperature
+    unit: °C
+    entity_type: diag
+    disabled_by_default: true
+    device_class: temperature
+  misfires_count:
+    register: 11019
+    description: Misfires count
+    entity_type: diag
+    disabled_by_default: true
+    state_class: total_increasing
+  board_temperature:
+    register: 10248
+    description: Board temperature
+    scale: 0.1
+    unit: °C
+    entity_type: diag
+    disabled_by_default: true
+    device_class: temperature
+    state_class: measurement
+  supply_voltage:
+    register: 10249
+    description: Supply voltage
+    scale: 0.1
+    unit: V
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+  battery_voltage:
+    register: 10250
+    description: Battery voltage
+    scale: 0.1
+    unit: V
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+  input_1_value:
+    register: 10251
+    description: Input 1 value (raw)
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+  input_2_value:
+    register: 10252
+    description: Input 2 value (raw)
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+  input_3_value:
+    register: 10253
+    description: Input 3 value (raw)
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+  input_4_value:
+    register: 10254
+    description: Input 4 value (raw)
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+  input_5_value:
+    register: 10255
+    description: Input 5 value (raw)
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+    input_role: input_5_configuration
+  input_6_value:
+    register: 10256
+    description: Input 6 value (raw)
+    entity_type: diag
+    disabled_by_default: true
+    state_class: measurement
+    input_role: input_6_configuration
+  input_1_configuration:
+    register: 11010
+    description: Input 1 configuration
+    entity_type: diag
+    disabled_by_default: true
+  input_2_configuration:
+    register: 11011
+    description: Input 2 configuration
+    entity_type: diag
+    disabled_by_default: true
+  input_3_configuration:
+    register: 11012
+    description: Input 3 configuration
+    entity_type: diag
+    disabled_by_default: true
+  input_4_configuration:
+    register: 11013
+    description: Input 4 configuration
+    entity_type: diag
+    disabled_by_default: true
+  input_5_configuration:
+    register: 11014
+    description: Input 5 configuration
+    entity_type: diag
+    disabled_by_default: true
+  input_6_configuration:
+    register: 11015
+    description: Input 6 configuration
+    entity_type: diag
+    disabled_by_default: true

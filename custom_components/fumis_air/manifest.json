@@ -1,0 +1,30 @@
+{
+  "domain": "fumis_air",
+  "name": "Fumis AIR",
+  "bluetooth": [
+    {
+      "connectable": true,
+      "local_name": "Fumis AIR",
+      "service_uuid": "0000fff0-0000-1000-8000-00805f9b34fb"
+    },
+    {
+      "connectable": true,
+      "local_name": "Senso",
+      "service_uuid": "0000fff0-0000-1000-8000-00805f9b34fb"
+    },
+    {
+      "connectable": true,
+      "local_name": "AirMaster",
+      "service_uuid": "0000fff0-0000-1000-8000-00805f9b34fb"
+    }
+  ],
+  "categories": ["climate.thermostats_heating"],
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["bluetooth"],
+  "documentation": "https://github.com/sopsy/ha-fumis-air/blob/master/README.md",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/sopsy/ha-fumis-air/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

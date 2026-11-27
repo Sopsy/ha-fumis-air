@@ -1,0 +1,1265 @@
+entities:
+  advice:
+    register: 10503
+    description: Advice
+    fast_update_frequency: true
+  chamber_temperature:
+    register: 10243
+    description: Firebox temperature
+    unit: °C
+    fast_update_frequency: true
+    device_class: temperature
+    state_class: measurement
+    precision: 0
+    display_bit: 2
+  heat_capacity:
+    register: 10262
+    description: Heat capacity
+    unit: '%'
+    state_class: measurement
+    display_bit: 7
+  regulator_position:
+    register: 10263
+    description: Regulator position
+    unit: '%'
+    state_class: measurement
+    display_bit: 8
+  heat_output:
+    register: 10264
+    description: Heat output
+    scale: 100
+    unit: W
+    device_class: power
+    state_class: measurement
+    display_bit: 9
+  fuel_type:
+    register: 11270
+    description: Fuel type
+    entity_type: config
+    platform: select
+    group: settings
+  air_management_timeout:
+    register: 11269
+    description: Air management timeout setting
+    entity_type: diag
+    disabled_by_default: true
+    group: settings
+  time_to_service:
+    register: 11024
+    description: Time to service
+    unit: h
+    entity_type: diag
+    disabled_by_default: true
+  parameter_senso_000_001:
+    register: 1
+    description: Desired position of air flap in Off phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-001
+  parameter_senso_000_002:
+    register: 2
+    description: Desired position of air flap in Off phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-002
+  parameter_senso_000_003:
+    register: 3
+    description: Desired position of air flap in Off phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-003
+  parameter_senso_000_004:
+    register: 4
+    description: Desired position of air flap in Off phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-004
+  parameter_senso_000_005:
+    register: 5
+    description: Desired position of air flap in Off phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-005
+  parameter_senso_000_006:
+    register: 6
+    description: >-
+      Gas temperature threshold for automatic start of the system when in Off
+      phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-006
+  parameter_senso_000_007:
+    register: 7
+    description: >-
+      Gas temperature threshold for automatic start of the system when in Off
+      phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-007
+  parameter_senso_000_008:
+    register: 8
+    description: >-
+      Gas temperature threshold for automatic start of the system when in Off
+      phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-008
+  parameter_senso_000_009:
+    register: 9
+    description: >-
+      Gas temperature threshold for automatic start of the system when in Off
+      phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-009
+  parameter_senso_000_010:
+    register: 10
+    description: >-
+      Gas temperature threshold for automatic start of the system when in Off
+      phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 000-010
+  parameter_senso_000_011:
+    register: 11
+    description: Minimum time the system stays in Off phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 000-011
+  parameter_senso_001_001:
+    register: 257
+    description: Desired position of air flap in Firing Up phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-001
+  parameter_senso_001_002:
+    register: 258
+    description: Desired position of air flap in Firing Up phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-002
+  parameter_senso_001_003:
+    register: 259
+    description: Desired position of air flap in Firing Up phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-003
+  parameter_senso_001_004:
+    register: 260
+    description: Desired position of air flap in Firing Up phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-004
+  parameter_senso_001_005:
+    register: 261
+    description: Desired position of air flap in Firing Up phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-005
+  parameter_senso_001_006:
+    register: 262
+    description: >-
+      Gas temperature threshold for automatic transition from Firing up to Check
+      fire phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-006
+  parameter_senso_001_007:
+    register: 263
+    description: >-
+      Gas temperature threshold for automatic transition from Firing up to Check
+      fire phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-007
+  parameter_senso_001_008:
+    register: 264
+    description: >-
+      Gas temperature threshold for automatic transition from Firing up to Check
+      fire phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-008
+  parameter_senso_001_009:
+    register: 265
+    description: >-
+      Gas temperature threshold for automatic transition from Firing up to Check
+      fire phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-009
+  parameter_senso_001_010:
+    register: 266
+    description: >-
+      Gas temperature threshold for automatic transition from Firing up to Check
+      fire phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 001-010
+  parameter_senso_001_011:
+    register: 267
+    description: >-
+      Temp. must be above TempThr for "TimeDelay" seconds, before system
+      transitions to Check Fire
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 001-011
+  parameter_senso_001_012:
+    register: 268
+    description: Maximum time for exiting Firing up and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 001-012
+  parameter_senso_002_001:
+    register: 513
+    description: Desired position of air flap in Check fire phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-001
+  parameter_senso_002_002:
+    register: 514
+    description: Desired position of air flap in Check fire phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-002
+  parameter_senso_002_003:
+    register: 515
+    description: Desired position of air flap in Check fire phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-003
+  parameter_senso_002_004:
+    register: 516
+    description: Desired position of air flap in Check fire phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-004
+  parameter_senso_002_005:
+    register: 517
+    description: Desired position of air flap in Check fire phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-005
+  parameter_senso_002_006:
+    register: 518
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-006
+  parameter_senso_002_007:
+    register: 519
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-007
+  parameter_senso_002_008:
+    register: 520
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-008
+  parameter_senso_002_009:
+    register: 521
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-009
+  parameter_senso_002_010:
+    register: 522
+    description: >-
+      Gas temperature threshold for automatic transition from Check fire to
+      Burning fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 002-010
+  parameter_senso_002_011:
+    register: 523
+    description: >-
+      Temp. must be above TempThr for "TimeDelay" seconds, before system
+      transitions to Burning
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 002-011
+  parameter_senso_002_012:
+    register: 524
+    description: Maximum time for exiting Check fire and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 002-012
+  parameter_senso_003_001:
+    register: 769
+    description: Desired position of air flap in Burning phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-001
+  parameter_senso_003_002:
+    register: 770
+    description: Desired position of air flap in Burning phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-002
+  parameter_senso_003_003:
+    register: 771
+    description: Desired position of air flap in Burning phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-003
+  parameter_senso_003_004:
+    register: 772
+    description: Desired position of air flap in Burning phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-004
+  parameter_senso_003_005:
+    register: 773
+    description: Desired position of air flap in Burning phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-005
+  parameter_senso_003_006:
+    register: 774
+    description: >-
+      Gas temperature threshold for automatic transition from Burning to Burnout
+      phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-006
+  parameter_senso_003_007:
+    register: 775
+    description: >-
+      Gas temperature threshold for automatic transition from Burning to Burnout
+      phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-007
+  parameter_senso_003_008:
+    register: 776
+    description: >-
+      Gas temperature threshold for automatic transition from Burning to Burnout
+      phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-008
+  parameter_senso_003_009:
+    register: 777
+    description: >-
+      Gas temperature threshold for automatic transition from Burning to Burnout
+      phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-009
+  parameter_senso_003_010:
+    register: 778
+    description: >-
+      Gas temperature threshold for automatic transition from Burning to Burnout
+      phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 003-010
+  parameter_senso_003_011:
+    register: 779
+    description: Minimum time the system stays in Burning phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 003-011
+  parameter_senso_003_012:
+    register: 780
+    description: >-
+      Temp. must be below TempThr for "TimeDelay" seconds, before system
+      transitions to Burnout
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 003-012
+  parameter_senso_004_001:
+    register: 1025
+    description: Desired position of air flap in Burnout phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-001
+  parameter_senso_004_002:
+    register: 1026
+    description: Desired position of air flap in Burnout phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-002
+  parameter_senso_004_003:
+    register: 1027
+    description: Desired position of air flap in Burnout phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-003
+  parameter_senso_004_004:
+    register: 1028
+    description: Desired position of air flap in Burnout phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-004
+  parameter_senso_004_005:
+    register: 1029
+    description: Desired position of air flap in Burnout phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-005
+  parameter_senso_004_006:
+    register: 1030
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Burning
+      phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-006
+  parameter_senso_004_007:
+    register: 1031
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Burning
+      phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-007
+  parameter_senso_004_008:
+    register: 1032
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Burning
+      phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-008
+  parameter_senso_004_009:
+    register: 1033
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Burning
+      phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-009
+  parameter_senso_004_010:
+    register: 1034
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Burning
+      phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-010
+  parameter_senso_004_011:
+    register: 1035
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Lowfire
+      phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-011
+  parameter_senso_004_012:
+    register: 1036
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Lowfire
+      phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-012
+  parameter_senso_004_013:
+    register: 1037
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Lowfire
+      phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-013
+  parameter_senso_004_014:
+    register: 1038
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Lowfire
+      phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-014
+  parameter_senso_004_015:
+    register: 1039
+    description: >-
+      Gas temperature threshold for automatic transition from Burnout to Lowfire
+      phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 004-015
+  parameter_senso_004_016:
+    register: 1040
+    description: >-
+      Temp. must be below/above TempThr for "TimeDelay" seconds, before system
+      transitions to LowFire/Burning
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 004-016
+  parameter_senso_004_017:
+    register: 1041
+    description: Maximum time for exiting Burnout and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 004-017
+  parameter_senso_005_001:
+    register: 1281
+    description: Desired position of air flap in Low Fire phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-001
+  parameter_senso_005_002:
+    register: 1282
+    description: Desired position of air flap in Low Fire phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-002
+  parameter_senso_005_003:
+    register: 1283
+    description: Desired position of air flap in Low Fire phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-003
+  parameter_senso_005_004:
+    register: 1284
+    description: Desired position of air flap in Low Fire phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-004
+  parameter_senso_005_005:
+    register: 1285
+    description: Desired position of air flap in Low Fire phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-005
+  parameter_senso_005_006:
+    register: 1286
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 1 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-006
+  parameter_senso_005_007:
+    register: 1287
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 2 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-007
+  parameter_senso_005_008:
+    register: 1288
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 3 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-008
+  parameter_senso_005_009:
+    register: 1289
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 4 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-009
+  parameter_senso_005_010:
+    register: 1290
+    description: >-
+      Gas temperature threshold for automatic transition from Low fire to
+      Burning power 5 phase
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 005-010
+  parameter_senso_005_011:
+    register: 1291
+    description: >-
+      Temp. must be above TempThr for "TimeDelay" seconds, before system
+      transitions to Burning
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 005-011
+  parameter_senso_005_012:
+    register: 1292
+    description: Maximum time for exiting Low fire and entering Shut down phase
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 005-012
+  parameter_senso_006_001:
+    register: 1537
+    description: Desired position of air flap in Shut Down phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-001
+  parameter_senso_006_002:
+    register: 1538
+    description: Desired position of air flap in Shut Down phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-002
+  parameter_senso_006_003:
+    register: 1539
+    description: Desired position of air flap in Shut Down phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-003
+  parameter_senso_006_004:
+    register: 1540
+    description: Desired position of air flap in Shut Down phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-004
+  parameter_senso_006_005:
+    register: 1541
+    description: Desired position of air flap in Shut Down phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-005
+  parameter_senso_006_006:
+    register: 1542
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Low
+      fire phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-006
+  parameter_senso_006_007:
+    register: 1543
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Low
+      fire phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-007
+  parameter_senso_006_008:
+    register: 1544
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Low
+      fire phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-008
+  parameter_senso_006_009:
+    register: 1545
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Low
+      fire phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-009
+  parameter_senso_006_010:
+    register: 1546
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Low
+      fire phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-010
+  parameter_senso_006_011:
+    register: 1547
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Off
+      phase fuel type 1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-011
+  parameter_senso_006_012:
+    register: 1548
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Off
+      phase fuel type 2
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-012
+  parameter_senso_006_013:
+    register: 1549
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Off
+      phase fuel type 3
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-013
+  parameter_senso_006_014:
+    register: 1550
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Off
+      phase fuel type 4
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-014
+  parameter_senso_006_015:
+    register: 1551
+    description: >-
+      Gas temperature threshold for automatic transition from Shut down to Off
+      phase fuel type 5
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 006-015
+  parameter_senso_006_016:
+    register: 1552
+    description: >-
+      Temp. must be below/above TempThr for "TimeDelay" seconds, before system
+      transitions to Off/LowFire
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 006-016
+  parameter_senso_020_001:
+    register: 5121
+    description: Desired position of air flap in DoorOpen phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-001
+  parameter_senso_020_002:
+    register: 5122
+    description: Desired position of air flap in DoorOpen phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-002
+  parameter_senso_020_003:
+    register: 5123
+    description: Desired position of air flap in DoorOpen phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-003
+  parameter_senso_020_004:
+    register: 5124
+    description: Desired position of air flap in DoorOpen phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-004
+  parameter_senso_020_005:
+    register: 5125
+    description: Desired position of air flap in DoorOpen phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 020-005
+  parameter_senso_020_006:
+    register: 5126
+    description: >-
+      Time delay 1 when door switch opens. If the door closes in less than X
+      seconds flap stays in the same position. If the door is still open after
+      this X time flap goes to Door open position
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 020-006
+  parameter_senso_020_007:
+    register: 5127
+    description: >-
+      Time delay 2 when door switch closes. The system stays in Door open
+      position for X seconds
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 020-007
+  parameter_senso_020_008:
+    register: 5128
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Off phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-008
+  parameter_senso_020_009:
+    register: 5129
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Firing up phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-009
+  parameter_senso_020_010:
+    register: 5130
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Check fire phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-010
+  parameter_senso_020_011:
+    register: 5131
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Burning phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-011
+  parameter_senso_020_012:
+    register: 5132
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Burnout phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-012
+  parameter_senso_020_013:
+    register: 5133
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Low fire phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-013
+  parameter_senso_020_014:
+    register: 5134
+    description: >-
+      Defines which phase we enter when coming out of door open phase if we were
+      in Shut down phase
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 020-014
+  parameter_senso_021_001:
+    register: 5377
+    description: Desired position of air flap in OverTemp phase fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-001
+  parameter_senso_021_002:
+    register: 5378
+    description: Desired position of air flap in OverTemp phase fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-002
+  parameter_senso_021_003:
+    register: 5379
+    description: Desired position of air flap in OverTemp phase fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-003
+  parameter_senso_021_004:
+    register: 5380
+    description: Desired position of air flap in OverTemp phase fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-004
+  parameter_senso_021_005:
+    register: 5381
+    description: Desired position of air flap in OverTemp phase fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 021-005
+  parameter_senso_021_006:
+    register: 5382
+    description: Minimum time before entering OverTemp operation when trigged
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 10000
+    identifier: 021-006
+  parameter_senso_021_007:
+    register: 5383
+    description: Reset value for overheat timer
+    unit: h
+    raw_minimum: 0
+    raw_maximum: 500
+    identifier: 021-007
+  parameter_senso_022_001:
+    register: 5633
+    description: Desired position of air flap in Room Temperature Function fuel type 1
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-001
+  parameter_senso_022_002:
+    register: 5634
+    description: Desired position of air flap in Room Temperature Function fuel type 2
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-002
+  parameter_senso_022_003:
+    register: 5635
+    description: Desired position of air flap in Room Temperature Function fuel type 3
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-003
+  parameter_senso_022_004:
+    register: 5636
+    description: Desired position of air flap in Room Temperature Function fuel type 4
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-004
+  parameter_senso_022_005:
+    register: 5637
+    description: Desired position of air flap in Room Temperature Function fuel type 5
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 022-005
+  target_room_temperature:
+    register: 5638
+    description: Set max ambient temperature.
+    scale: 0.1
+    unit: °C
+    entity_type: config
+    platform: number
+    raw_minimum: 0
+    raw_maximum: 500
+    group: settings
+    identifier: 022-006
+  parameter_senso_022_007:
+    register: 5639
+    description: Max limit for room temperature adjustment
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 500
+    identifier: 022-007
+  parameter_senso_022_008:
+    register: 5640
+    description: Min limit for room temperature adjustment
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 500
+    identifier: 022-008
+  parameter_senso_022_009:
+    register: 5641
+    description: Hysteresis for state 2 of temperature function
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 50
+    identifier: 022-009
+  room_temperature_control:
+    register: 5642
+    description: Enable Room Temperature Function
+    entity_type: config
+    platform: switch
+    raw_minimum: 0
+    raw_maximum: 1
+    group: settings
+    identifier: 022-010
+  parameter_senso_022_011:
+    register: 5643
+    description: >-
+      Defines to what state we return when room temperature drops. 0 - returns
+      to state where room over temp was detected.
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 022-011
+  parameter_senso_022_012:
+    register: 5644
+    description: Hysteresis for exiting room temperature function
+    scale: 0.1
+    unit: °C
+    raw_minimum: 0
+    raw_maximum: 50
+    identifier: 022-012
+  parameter_senso_023_001:
+    register: 5889
+    description: Desired position of primary air flap in I/OFailure phase
+    scale: 0.1
+    unit: '%'
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-001
+  parameter_senso_023_002:
+    register: 5890
+    description: After this time motor error is reported
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 1000
+    identifier: 023-002
+  parameter_senso_030_001:
+    register: 7681
+    description: Mode input 1
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-001
+  parameter_senso_030_002:
+    register: 7682
+    description: Mode input 2
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-002
+  parameter_senso_030_003:
+    register: 7683
+    description: Mode input 3
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-003
+  parameter_senso_030_004:
+    register: 7684
+    description: Mode input 4
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-004
+  parameter_senso_030_005:
+    register: 7685
+    description: Mode input/output 5
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-005
+  parameter_senso_030_006:
+    register: 7686
+    description: Mode input/output 6
+    raw_minimum: 0
+    raw_maximum: 10
+    identifier: 030-006
+  parameter_senso_030_007:
+    register: 7687
+    description: Channel select for gas temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-007
+  parameter_senso_030_008:
+    register: 7688
+    description: Channel select for room temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-008
+  parameter_senso_030_009:
+    register: 7689
+    description: Channel select for Ext1 temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-009
+  parameter_senso_030_010:
+    register: 7690
+    description: Channel select for Ext2 temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-010
+  parameter_senso_030_011:
+    register: 7691
+    description: Channel select for heat accumulation stone temperature measurement
+    raw_minimum: 0
+    raw_maximum: 6
+    identifier: 030-011
+  parameter_senso_030_012:
+    register: 7692
+    description: Current selected Fuel type
+    raw_minimum: 1
+    raw_maximum: 5
+    identifier: 030-012
+  parameter_senso_030_013:
+    register: 7693
+    description: Number of FuelTypes
+    raw_minimum: 1
+    raw_maximum: 5
+    identifier: 030-013
+  led_brightness:
+    register: 7694
+    description: LED display brightness
+    unit: '%'
+    entity_type: config
+    platform: select
+    raw_minimum: 0
+    raw_maximum: 100
+    group: settings
+    identifier: 030-014
+  sound_volume:
+    register: 7695
+    description: Beeper volume
+    unit: '%'
+    entity_type: config
+    platform: select
+    raw_minimum: 0
+    raw_maximum: 100
+    group: settings
+    identifier: 030-015
+  nominal_power:
+    register: 7696
+    description: Nominal power
+    scale: 0.1
+    unit: kW
+    entity_type: config
+    platform: number
+    raw_minimum: 0
+    raw_maximum: 500
+    disabled_by_default: true
+    group: settings
+    identifier: 030-016
+  max_heat_cap_temperature:
+    register: 7697
+    description: Max stone temp - forh heat charge calculation
+    unit: °C
+    entity_type: config
+    platform: number
+    raw_minimum: 70
+    raw_maximum: 160
+    disabled_by_default: true
+    group: settings
+    identifier: 030-017
+  parameter_senso_030_018:
+    register: 7698
+    description: 'Above this value, we don''t show load wood'
+    unit: '%'
+    raw_minimum: 50
+    raw_maximum: 100
+    identifier: 030-018
+  parameter_senso_030_019:
+    register: 7699
+    description: For overheat alarm - too much heat charge
+    unit: '%'
+    raw_minimum: 100
+    raw_maximum: 200
+    identifier: 030-019
+  parameter_senso_030_020:
+    register: 7700
+    description: Frequency divider for 0-10V output
+    raw_minimum: 1
+    raw_maximum: 600
+    identifier: 030-020
+  parameter_senso_030_021:
+    register: 7701
+    description: Motor manual control timeout
+    unit: s
+    raw_minimum: 0
+    raw_maximum: 32000
+    identifier: 030-021
